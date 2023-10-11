@@ -1,0 +1,191 @@
+.main_card {
+  width: 100%;
+  min-width: 900px;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+  background-color: #f2f2f2;
+}
+
+.top_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 900px;
+}
+
+.title_card {
+  display: flex;
+  flex-direction: column;
+}
+
+.title_card h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.title_card p {
+  font-size: 13px;
+  font-weight: 500;
+  color: #888eb0;
+  margin: 0;
+}
+
+.buttons_card {
+  display: flex;
+  gap: 2rem;
+}
+
+.buttons_card .filter {
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  background: transparent;
+  /* -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative; */
+}
+
+.buttons_card .filter:is(:active, :hover, :focus, :focus-visible) {
+  border: none;
+}
+
+/* .filter::after {
+  content: "\25BC"; 
+  position: absolute;
+  top: 10px;
+  right: 10px; 
+  transform: translateY(-50%);
+  color: red; 
+  z-index: 1000;
+  pointer-events: none;
+} */
+
+.buttons_card .new_invoice_btn_wrapper {
+  background-color: #7c5dfa;
+  color: white;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 15px 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 2px solid #7c5dfa;
+  transition: all ease-in-out 0.2s;
+}
+
+.buttons_card .new_invoice_btn_wrapper:is(:hover) {
+  color: #7c5dfa;
+  background-color: white;
+}
+
+.buttons_card .new_invoice_btn_wrapper .circle_plus {
+  color: #7c5dfa;
+  background-color: white;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 50px;
+  margin-right: 15px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  transition: all ease-in-out 0.2s;
+}
+
+.buttons_card .new_invoice_btn_wrapper:hover .circle_plus {
+  background-color: #7c5dfa;
+  color: white;
+}
+
+.buttons_card .new_invoice_btn_wrapper .invoice_btn {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.list_parent {
+  margin-top: 64px;
+  overflow-y: auto;
+  height: 600px;
+}
+.list_single {
+  display: flex;
+  gap: 2rem;
+  background-color: white;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  padding: 10px 20px 10px 40px;
+  box-shadow: 0px 10px 10px -10px rgba(72, 84, 159, 0.1004);
+}
+
+.list_single p {
+  width: 150px;
+  align-self: center;
+}
+
+.list_single .box_id,
+.box_price {
+  text-transform: uppercase;
+  font-weight: 600;
+  width: 100px;
+}
+
+.list_single .box_date,
+.box_company {
+  color: #858bb2;
+  font-size: 13px;
+}
+
+.list_single .box_status_paid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: #33d69f;
+  width: 90px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 14px 30px;
+  background-color: #33d6a027;
+  border-radius: 6px;
+  box-shadow: 0px 10px 10px -10px rgba(72, 84, 159, 0.1004);
+}
+
+.list_single .box_status_pending {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: #ff8f00;
+  width: 90px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 14px 30px;
+  background-color: #ff91001c;
+  border-radius: 6px;
+  box-shadow: 0px 10px 10px -10px rgba(72, 84, 159, 0.1004);
+}
+
+.list_single .box_status_paid .paid {
+  background-color: #33d69f;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+}
+
+.list_single .box_status_pending .pending {
+  background-color: #ff8f00;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+}
