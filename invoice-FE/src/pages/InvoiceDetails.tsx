@@ -1,11 +1,14 @@
-import "../App.css";
+import MainWrapper from "../components/MainWrapper";
+import { useParams } from "react-router-dom";
 
-function InvoiceDetails() {
+const InvoiceDetails = () => {
+  const { invoiceId } = useParams();
+
   return (
-    <div>
-      <h1>Invoice Details Page</h1>
-    </div>
+    <MainWrapper>
+      <h1>{`Invoice Details Page ${invoiceId}`}</h1>
+    </MainWrapper>
   );
-}
+};
 
 export default InvoiceDetails;

@@ -18,7 +18,7 @@ function App() {
           element: <Home />,
         },
         {
-          path: "invoiceDetails",
+          path: "invoiceDetails/:invoiceId",
           element: <InvoiceDetails />,
         },
       ],

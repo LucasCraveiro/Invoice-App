@@ -1,86 +1,12 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import MainWrapper from "../components/MainWrapper";
 import classes from "./home.module.css";
+import Arrow from "../assets/arrow.svg";
+import { data } from "../utils";
 
-const generateUniqueId = () => {
-  return self.crypto.randomUUID().slice(0, 5).toString();
-};
-
-const data = [
-  {
-    id: generateUniqueId(),
-    date: "March 14, 2021",
-    company: "GitHub",
-    amount: "$500",
-    status: "paid",
-  },
-  {
-    id: generateUniqueId(),
-    date: "February 28, 2021",
-    company: "Amazon",
-    amount: "$75",
-    status: "pending",
-  },
-  {
-    id: generateUniqueId(),
-    date: "April 5, 2021",
-    company: "Google",
-    amount: "$10000",
-    status: "paid",
-  },
-  {
-    id: generateUniqueId(),
-    date: "May 20, 2021",
-    company: "Microsoft",
-    amount: "$807",
-    status: "pending",
-  },
-  {
-    id: generateUniqueId(),
-    date: "June 10, 2021",
-    company: "Apple",
-    amount: "$11120",
-    status: "paid",
-  },
-  {
-    id: generateUniqueId(),
-    date: "July 15, 2021",
-    company: "Netflix",
-    amount: "$70",
-    status: "pending",
-  },
-  {
-    id: generateUniqueId(),
-    date: "August 25, 2021",
-    company: "Facebook",
-    amount: "$90",
-    status: "paid",
-  },
-  {
-    id: generateUniqueId(),
-    date: "September 3, 2021",
-    company: "Twitter",
-    amount: "$60",
-    status: "pending",
-  },
-  {
-    id: generateUniqueId(),
-    date: "October 12, 2021",
-    company: "LinkedIn",
-    amount: "$110",
-    status: "paid",
-  },
-  {
-    id: generateUniqueId(),
-    date: "November 8, 2021",
-    company: "Instagram",
-    amount: "$45",
-    status: "pending",
-  },
-];
-
-function Home() {
+const Home = () => {
   const [selectedFilter, setSelectedFilter] = useState("filter_by_date");
   return (
     <MainWrapper>
@@ -115,7 +41,7 @@ function Home() {
         {data.map((item) => (
           <div key={item.id} className={classes.list_single}>
             <p className={classes.box_id}>{item.id}</p>
-            <p className={classes.box_date}>{item.date}</p>
+            <p className={classes.box_date}>{item.dueDate}</p>
             <p className={classes.box_company}>{item.company}</p>
             <p className={classes.box_price}>{item.amount}</p>
             <p
@@ -125,13 +51,19 @@ function Home() {
                   : classes.box_status_pending
               }
             >
-              <div
+              <span
                 className={
                   item.status === "paid" ? classes.paid : classes.pending
                 }
-              ></div>
+              ></span>
               {item.status}
             </p>
+            <Link
+              to={`invoiceDetails/${item.id}`}
+              className={classes.arrow_link}
+            >
+              <img src={Arrow} alt="logo" className={classes.arrow} />
+            </Link>
           </div>
         ))}
       </div>
@@ -139,6 +71,6 @@ function Home() {
       {/* END LIST element */}
     </MainWrapper>
   );
-}
+};
 
 export default Home;

@@ -176,3 +176,18 @@
   height: 10px;
   border-radius: 50px;
 }
+
+.arrow_link {
+  align-self: center;
+}
+
+.arrow {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  transition: all ease-in-out 0.3s;
+}
+
+.arrow:is(:hover) {
+  transform: scale(1.5);
+}
