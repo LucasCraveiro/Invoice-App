@@ -1,4 +1,6 @@
 import { useState } from "react";
+
+import MainWrapper from "../components/MainWrapper";
 import classes from "./home.module.css";
 
 const generateUniqueId = () => {
@@ -81,7 +83,7 @@ const data = [
 function Home() {
   const [selectedFilter, setSelectedFilter] = useState("filter_by_date");
   return (
-    <div className={classes.main_card}>
+    <MainWrapper>
       {/* TOP element including Heading and Buttons*/}
       <div className={classes.top_card}>
         <div className={classes.title_card}>
@@ -135,7 +137,7 @@ function Home() {
       </div>
 
       {/* END LIST element */}
-    </div>
+    </MainWrapper>
   );
 }
 
