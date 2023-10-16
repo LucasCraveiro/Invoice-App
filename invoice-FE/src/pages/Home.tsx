@@ -4,17 +4,20 @@ import { Link } from "react-router-dom";
 import MainWrapper from "../components/MainWrapper";
 import classes from "./home.module.css";
 import Arrow from "../assets/arrow.svg";
-import { data } from "../utils";
+import { dataInvoice } from "../utils";
 
 const Home = () => {
   const [selectedFilter, setSelectedFilter] = useState("filter_by_date");
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [data, setData] = useState(dataInvoice);
+
   return (
     <MainWrapper>
       {/* TOP element including Heading and Buttons*/}
       <div className={classes.top_card}>
         <div className={classes.title_card}>
           <h2>Invoices</h2>
-          <p>There are 7 total invoices</p>
+          <p>{`There are ${data.length} total invoices`}</p>
         </div>
         <div className={classes.buttons_card}>
           <select

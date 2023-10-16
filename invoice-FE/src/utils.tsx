@@ -2,7 +2,7 @@ const generateUniqueId = () => {
   return self.crypto.randomUUID().slice(0, 5).toString();
 };
 
-export const data = [
+export const dataInvoice = [
   {
     id: generateUniqueId(),
     dueDate: "March 14, 2021",
@@ -18,8 +18,8 @@ export const data = [
     billTo: "Alex Grim",
     invoiceDate: "March 14, 2021",
     items: [
-      { itemName: "Banner Design", qty: 2, price: "150" },
-      { itemName: "Email Design", qty: 1, price: "350" },
+      { itemName: "Banner Design", qty: 2, price: 150 },
+      { itemName: "Email Design", qty: 1, price: 350 },
     ],
   },
   {
@@ -37,8 +37,8 @@ export const data = [
     billTo: "Customer Name",
     invoiceDate: "February 28, 2021",
     items: [
-      { itemName: "Product A", qty: 1, price: "50" },
-      { itemName: "Product B", qty: 2, price: "25" },
+      { itemName: "Product A", qty: 1, price: 50 },
+      { itemName: "Product B", qty: 2, price: 25 },
     ],
   },
   {
@@ -55,7 +55,7 @@ export const data = [
     email: "advertiser@email.com",
     billTo: "Ad Company",
     invoiceDate: "April 5, 2021",
-    items: [{ itemName: "Ad Campaign", qty: 1, price: "10000" }],
+    items: [{ itemName: "Ad Campaign", qty: 1, price: 10000 }],
   },
   {
     id: generateUniqueId(),
@@ -71,7 +71,7 @@ export const data = [
     email: "licensing@email.com",
     billTo: "Licensing Company",
     invoiceDate: "May 20, 2021",
-    items: [{ itemName: "Windows License", qty: 1, price: "807" }],
+    items: [{ itemName: "Windows License", qty: 1, price: 807 }],
   },
   {
     id: generateUniqueId(),
@@ -88,8 +88,8 @@ export const data = [
     billTo: "Customer Name",
     invoiceDate: "June 10, 2021",
     items: [
-      { itemName: "iPhone", qty: 2, price: "5500" },
-      { itemName: "MacBook", qty: 1, price: "5620" },
+      { itemName: "iPhone", qty: 2, price: 5500 },
+      { itemName: "MacBook", qty: 1, price: 5620 },
     ],
   },
   {
@@ -106,7 +106,7 @@ export const data = [
     email: "subscriber@email.com",
     billTo: "Subscriber Name",
     invoiceDate: "July 15, 2021",
-    items: [{ itemName: "Monthly Subscription", qty: 1, price: "70" }],
+    items: [{ itemName: "Monthly Subscription", qty: 1, price: 70 }],
   },
   {
     id: generateUniqueId(),
@@ -122,7 +122,7 @@ export const data = [
     email: "advertiser@email.com",
     billTo: "Ad Company",
     invoiceDate: "August 25, 2021",
-    items: [{ itemName: "Ad Campaign", qty: 1, price: "90" }],
+    items: [{ itemName: "Ad Campaign", qty: 1, price: 90 }],
   },
   {
     id: generateUniqueId(),
@@ -138,7 +138,7 @@ export const data = [
     email: "advertiser@email.com",
     billTo: "Ad Company",
     invoiceDate: "September 3, 2021",
-    items: [{ itemName: "Promoted Tweets", qty: 1, price: "60" }],
+    items: [{ itemName: "Promoted Tweets", qty: 1, price: 60 }],
   },
   {
     id: generateUniqueId(),
@@ -154,7 +154,7 @@ export const data = [
     email: "network@email.com",
     billTo: "Network Company",
     invoiceDate: "October 12, 2021",
-    items: [{ itemName: "Professional Subscription", qty: 1, price: "110" }],
+    items: [{ itemName: "Professional Subscription", qty: 1, price: 110 }],
   },
   {
     id: generateUniqueId(),
@@ -170,7 +170,7 @@ export const data = [
     email: "advertiser@email.com",
     billTo: "Ad Company",
     invoiceDate: "November 8, 2021",
-    items: [{ itemName: "Promotion Package", qty: 1, price: "45" }],
+    items: [{ itemName: "Promotion Package", qty: 1, price: 45 }],
   },
   {
     id: generateUniqueId(),
@@ -187,8 +187,8 @@ export const data = [
     billTo: "John Smith",
     invoiceDate: "December 15, 2021",
     items: [
-      { itemName: "Social Media Posts", qty: 5, price: "10" },
-      { itemName: "Analytics Report", qty: 1, price: "30" },
+      { itemName: "Social Media Posts", qty: 5, price: 10 },
+      { itemName: "Analytics Report", qty: 1, price: 30 },
     ],
   },
 ];
