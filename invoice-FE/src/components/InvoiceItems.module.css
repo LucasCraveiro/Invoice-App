@@ -1,0 +1,58 @@
+.invoiceItems {
+  background-color: #f9fafe;
+  border-radius: 8px;
+  box-shadow: 0px 10px 10px -10px rgba(72, 84, 159, 0.1004);
+}
+
+.invoiceItems .description {
+  background-color: #e8eaf2cf;
+  border-radius: 8px 8px 0 0;
+  padding: 1rem 2rem;
+}
+
+.invoiceItems .description .item_desc {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 10px;
+}
+
+.invoiceItems .description .item_desc .item_inside_wrapper {
+  width: 25%;
+}
+
+.invoiceItems .description .item_desc .item_inside_wrapper h5 {
+  font-size: 13px;
+  color: #7e88c3;
+  font-weight: 500;
+}
+
+.invoiceItems .description .item_desc .item_inside_wrapper p {
+  font-size: 15px;
+}
+
+.invoiceItems .description .item_desc .item_name_desc {
+  font-weight: bold;
+  color: black;
+  font-size: 15px;
+}
+
+.invoiceItems .description .item_desc .item_total {
+  font-weight: bold;
+  color: black;
+  font-size: 15px;
+}
+
+.invoiceItems .total {
+  background-color: #373b53;
+  border-radius: 0 0 8px 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.invoiceItems .total h5,
+h2 {
+  color: white;
+}
