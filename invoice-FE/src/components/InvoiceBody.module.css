@@ -1,0 +1,31 @@
+.invoiceBody {
+  background-color: white;
+  padding: 1rem 2rem 2rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.invoiceBody p {
+  color: #7e88c3;
+  font-size: 13px;
+  margin: 0;
+}
+
+.invoiceBody h3 {
+  font-size: 15px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.invoiceBody .invoiceHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.invoiceBody .invoiceContent {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
