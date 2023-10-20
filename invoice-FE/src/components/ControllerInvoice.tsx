@@ -1,10 +1,7 @@
 import { Link } from "react-router-dom";
 import ArrowBack from "../assets/arrowBack.svg";
 import classes from "./ControllerInvoice.module.css";
-
-interface ControllerProps {
-  status: string;
-}
+import { ControllerProps } from "../types";
 
 const ControllerInvoice: React.FC<ControllerProps> = ({ status }) => {
   return (

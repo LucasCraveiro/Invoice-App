@@ -1,15 +1,5 @@
 import classes from "./InvoiceItems.module.css";
-
-type InvoiceItem = {
-  itemName: string;
-  qty: number;
-  price: number;
-};
-
-interface InvoiceItemsProps {
-  items: InvoiceItem[];
-  amount: string;
-}
+import { InvoiceItemsProps } from "../types";
 
 const InvoiceItems: React.FC<InvoiceItemsProps> = ({ items, amount }) => {
   return (
