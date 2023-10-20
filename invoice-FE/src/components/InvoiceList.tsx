@@ -1,33 +1,7 @@
 import classes from "./InvoiceList.module.css";
 import { Link } from "react-router-dom";
 import Arrow from "../assets/arrow.svg";
-
-type InvoiceItem = {
-  itemName: string;
-  qty: number;
-  price: number;
-};
-
-type InvoiceData = {
-  id: string;
-  dueDate: string;
-  company: string;
-  amount: string;
-  status: string;
-  type: string;
-  street: string;
-  city: string;
-  country: string;
-  postalCode: string;
-  email: string;
-  billTo: string;
-  invoiceDate: string;
-  items: InvoiceItem[];
-}[];
-
-interface InvoiceListProps {
-  data: InvoiceData;
-}
+import { InvoiceListProps } from "../types";
 
 const InvoiceList: React.FC<InvoiceListProps> = ({ data }) => {
   return (

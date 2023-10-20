@@ -1,8 +1,6 @@
 import classes from "./MainWrapper.module.css";
+import { MainWrapperProps } from "../types";
 
-type MainWrapperProps = {
-  children: React.ReactNode;
-};
 const MainWrapper: React.FC<MainWrapperProps> = ({ children }) => {
   return <div className={classes.main_card}>{children}</div>;
 };

@@ -1,33 +1,5 @@
 import classes from "./InvoiceListHeader.module.css";
-
-type InvoiceItem = {
-  itemName: string;
-  qty: number;
-  price: number;
-};
-
-type InvoiceData = {
-  id: string;
-  dueDate: string;
-  company: string;
-  amount: string;
-  status: string;
-  type: string;
-  street: string;
-  city: string;
-  country: string;
-  postalCode: string;
-  email: string;
-  billTo: string;
-  invoiceDate: string;
-  items: InvoiceItem[];
-}[];
-
-interface InvoiceListHeaderProps {
-  data: InvoiceData;
-  selectedFilter: string;
-  setSelectedFilter: (value: string) => void;
-}
+import { InvoiceListHeaderProps } from "../types";
 
 const InvoiceListHeader: React.FC<InvoiceListHeaderProps> = ({
   data,

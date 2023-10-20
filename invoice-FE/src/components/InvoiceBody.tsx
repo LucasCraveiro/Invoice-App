@@ -1,17 +1,5 @@
 import classes from "./InvoiceBody.module.css";
-
-interface InvoiceBodyProps {
-  id: string;
-  type: string;
-  street: string;
-  city: string;
-  postalCode: string;
-  country: string;
-  invoiceDate: string;
-  dueDate: string;
-  billTo: string;
-  email: string;
-}
+import { InvoiceBodyProps } from "../types";
 
 const InvoiceBody: React.FC<InvoiceBodyProps> = ({
   id,

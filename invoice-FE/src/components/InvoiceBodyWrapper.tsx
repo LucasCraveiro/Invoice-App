@@ -1,8 +1,6 @@
 import classes from "./InvoiceBodyWrapper.module.css";
+import { InvoiceBodyWrapperProps } from "../types";
 
-type InvoiceBodyWrapperProps = {
-  children: React.ReactNode;
-};
 const InvoiceBodyWrapper: React.FC<InvoiceBodyWrapperProps> = ({
   children,
 }) => {
