@@ -1,4 +1,4 @@
-.arrow_link {
+/* .arrow_link {
   display: flex;
   gap: 1rem;
   align-items: center;
@@ -14,7 +14,7 @@
 
 .arrow_link:is(:active, :visited, :focus, :focus-visible) .back {
   color: black;
-}
+} */
 
 .controler {
   display: flex;

@@ -1,17 +1,12 @@
-import { Link } from "react-router-dom";
-import ArrowBack from "../assets/arrowBack.svg";
 import classes from "./ControllerInvoice.module.css";
 import { ControllerProps } from "../types";
+
+import GoBack from "./base/GoBack";
 
 const ControllerInvoice: React.FC<ControllerProps> = ({ status }) => {
   return (
     <>
-      <div className={classes.go_back}>
-        <Link to={"/"} className={classes.arrow_link}>
-          <img src={ArrowBack} alt="logo" className={classes.arrow} />
-          <p className={classes.back}>Go back</p>
-        </Link>
-      </div>
+      <GoBack />
       <div className={classes.controler}>
         <p className={classes.status}>Status</p>
         <div
