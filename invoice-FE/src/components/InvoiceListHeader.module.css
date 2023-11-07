@@ -66,6 +66,7 @@
   align-items: center;
   border: 2px solid #7c5dfa;
   transition: all ease-in-out 0.2s;
+  text-decoration: none;
 }
 
 .buttons_card .new_invoice_btn_wrapper:is(:hover) {

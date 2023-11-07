@@ -1,5 +1,6 @@
 import classes from "./InvoiceListHeader.module.css";
 import { InvoiceListHeaderProps } from "../types";
+import { Link } from "react-router-dom";
 
 const InvoiceListHeader: React.FC<InvoiceListHeaderProps> = ({
   data,
@@ -25,10 +26,10 @@ const InvoiceListHeader: React.FC<InvoiceListHeaderProps> = ({
           <option value="filter_by_amount">Filter by Amount</option>
           <option value="filter_by_company">Filter by Company</option>
         </select>
-        <button className={classes.new_invoice_btn_wrapper}>
+        <Link to="/addInvoice" className={classes.new_invoice_btn_wrapper}>
           <span className={classes.circle_plus}>+</span>
           <span className={classes.invoice_btn}>New Invoice</span>
-        </button>
+        </Link>
       </div>
     </div>
   );
