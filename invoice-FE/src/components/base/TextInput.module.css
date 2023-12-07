@@ -1,0 +1,26 @@
+.single_wrapper {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #7e88c3;
+}
+
+.text_input {
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  color: black;
+  border-radius: 4px;
+  padding: 10px;
+  border: 1px solid #dfe3fa;
+  width: calc(100% - 20px);
+}
+
+input::placeholder {
+  font-size: 13px;
+  color: lightgray;
+  font-weight: 300;
+}
