@@ -6,6 +6,7 @@ label {
   font-size: 13px;
   font-weight: 500;
   color: #7e88c3;
+  padding-left: 2px;
 }
 
 .text_input {
@@ -17,6 +18,7 @@ label {
   padding: 10px;
   border: 1px solid #dfe3fa;
   width: calc(100% - 20px);
+  min-width: 250px;
 }
 
 input::placeholder {
