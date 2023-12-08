@@ -34,20 +34,23 @@ const TextInput: React.FC<TextInputProps> = ({
   required = false,
   placeholder = "",
   name = "",
+  id = "",
+  inline = false,
 }) => {
   return (
-    <>
-      {renderLabel && <label>{label}</label>}
+    <div className={classes.single_wrapper}>
+      {renderLabel && <label htmlFor={id}>{label}</label>}
 
       <input
-        className={classes.text_input}
+        className={`${classes.text_input} ${inline ? classes.inline : ""}`}
+        id={id}
         required={required}
         name={name}
         disabled={disabled}
         type={type}
         placeholder={placeholder}
       />
-    </>
+    </div>
   );
 };
 
