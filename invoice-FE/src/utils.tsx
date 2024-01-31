@@ -1,4 +1,4 @@
-const generateUniqueId = () => {
+export const generateUniqueId = () => {
   return self.crypto.randomUUID().slice(0, 5).toString();
 };
 
@@ -17,6 +17,7 @@ export const dataInvoice = [
     email: "alexgrim@mail.com",
     billTo: "Alex Grim",
     invoiceDate: "March 14, 2021",
+    payTerms: "Net 30 days",
     items: [
       { itemName: "Banner Design", qty: 2, price: 150 },
       { itemName: "Email Design", qty: 1, price: 350 },
@@ -36,6 +37,7 @@ export const dataInvoice = [
     email: "customer@email.com",
     billTo: "Customer Name",
     invoiceDate: "February 28, 2021",
+    payTerms: "Net 30 days",
     items: [
       { itemName: "Product A", qty: 1, price: 50 },
       { itemName: "Product B", qty: 2, price: 25 },
@@ -55,6 +57,7 @@ export const dataInvoice = [
     email: "advertiser@email.com",
     billTo: "Ad Company",
     invoiceDate: "April 5, 2021",
+    payTerms: "Net 30 days",
     items: [{ itemName: "Ad Campaign", qty: 1, price: 10000 }],
   },
   {
@@ -71,6 +74,7 @@ export const dataInvoice = [
     email: "licensing@email.com",
     billTo: "Licensing Company",
     invoiceDate: "May 20, 2021",
+    payTerms: "Net 30 days",
     items: [{ itemName: "Windows License", qty: 1, price: 807 }],
   },
   {
@@ -87,6 +91,7 @@ export const dataInvoice = [
     email: "sales@email.com",
     billTo: "Customer Name",
     invoiceDate: "June 10, 2021",
+    payTerms: "Net 30 days",
     items: [
       { itemName: "iPhone", qty: 2, price: 5500 },
       { itemName: "MacBook", qty: 1, price: 5620 },
@@ -106,6 +111,7 @@ export const dataInvoice = [
     email: "subscriber@email.com",
     billTo: "Subscriber Name",
     invoiceDate: "July 15, 2021",
+    payTerms: "Net 30 days",
     items: [{ itemName: "Monthly Subscription", qty: 1, price: 70 }],
   },
   {
@@ -122,6 +128,7 @@ export const dataInvoice = [
     email: "advertiser@email.com",
     billTo: "Ad Company",
     invoiceDate: "August 25, 2021",
+    payTerms: "Net 30 days",
     items: [{ itemName: "Ad Campaign", qty: 1, price: 90 }],
   },
   {
@@ -138,6 +145,7 @@ export const dataInvoice = [
     email: "advertiser@email.com",
     billTo: "Ad Company",
     invoiceDate: "September 3, 2021",
+    payTerms: "Net 30 days",
     items: [{ itemName: "Promoted Tweets", qty: 1, price: 60 }],
   },
   {
@@ -154,6 +162,7 @@ export const dataInvoice = [
     email: "network@email.com",
     billTo: "Network Company",
     invoiceDate: "October 12, 2021",
+    payTerms: "Net 30 days",
     items: [{ itemName: "Professional Subscription", qty: 1, price: 110 }],
   },
   {
@@ -170,6 +179,7 @@ export const dataInvoice = [
     email: "advertiser@email.com",
     billTo: "Ad Company",
     invoiceDate: "November 8, 2021",
+    payTerms: "Net 30 days",
     items: [{ itemName: "Promotion Package", qty: 1, price: 45 }],
   },
   {
@@ -186,6 +196,7 @@ export const dataInvoice = [
     email: "johnsmith@mail.com",
     billTo: "John Smith",
     invoiceDate: "December 15, 2021",
+    payTerms: "Net 30 days",
     items: [
       { itemName: "Social Media Posts", qty: 5, price: 10 },
       { itemName: "Analytics Report", qty: 1, price: 30 },
