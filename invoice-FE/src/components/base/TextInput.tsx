@@ -1,3 +1,4 @@
+import { ChangeEvent } from "react";
 import classes from "./TextInput.module.css";
 
 type TextInputProps = {
@@ -24,6 +25,8 @@ type TextInputProps = {
   maxLength?: number;
   placeholder?: string;
   renderLabel?: boolean;
+  value: string;
+  onChange: (event: ChangeEvent<HTMLInputElement>) => void;
 };
 
 const TextInput: React.FC<TextInputProps> = ({
@@ -34,8 +37,10 @@ const TextInput: React.FC<TextInputProps> = ({
   required = false,
   placeholder = "",
   name = "",
+  value = "",
   id = "",
   inline = false,
+  onChange,
 }) => {
   return (
     <div className={classes.single_wrapper}>
@@ -46,9 +51,11 @@ const TextInput: React.FC<TextInputProps> = ({
         id={id}
         required={required}
         name={name}
+        value={value}
         disabled={disabled}
         type={type}
         placeholder={placeholder}
+        onChange={onChange}
       />
     </div>
   );
